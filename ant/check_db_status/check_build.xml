@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Check status" basedir=".">
+<property file="local.rc" />
+<target name="check-database-available">
+    <sql
+       classpath="./lib/ojdbc6.jar" driver="oracle.jdbc.OracleDriver"
+       url="${db.url}"
+       userid="${db.user}"
+       password="${db.password}"
+       >
+       select * from dual;
+     </sql>
+     <echo message="### exit status = ${exit.status}" />
+</target>
+<target name="check-hive-mssql">
+    <sql
+       classpath="i2b2_1705/jboss-as-7.1.1.Final/standalone/deployments/sqljdbc4.jar" driver="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+       url="${db.hive.url}"
+       userid="${db.hive.user}"
+       password="${db.hive.password}"
+       src="./sql/hive_tables_check_mssql.sql"  
+       print="yes"
+     >
+     </sql>
+     <echo message="### exit status = ${exit.status}" />
+</target>
+</project>
