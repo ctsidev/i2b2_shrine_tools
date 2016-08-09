@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Check status" basedir=".">
-<property file="local.rc" />
-<target name="check-database-available">
+<property file="local.properties" />
+<target name="check-oracle-database">
     <sql
-       classpath="./lib/ojdbc6.jar" driver="oracle.jdbc.OracleDriver"
+       classpath="C:\\_Pralav\\code_libraries\\java\\ojdbc6_g.jar" driver="oracle.jdbc.OracleDriver"
        url="${db.url}"
        userid="${db.user}"
        password="${db.password}"
        >
        select * from dual;
+     </sql>
+     <echo message="### exit status = ${exit.status}" />
+</target>
+<target name="check-ucrex-pm">
+    <sql
+       classpath="C:\\_Pralav\\code_libraries\\java\\ojdbc6_g.jar" driver="oracle.jdbc.OracleDriver"
+       url="${ucrex.pm.db.url}"
+       userid="${ucrex.pm.db.user}"
+       password="${ucrex.pm.db.password}"
+       print="yes"
+       src="./sql/ucrex_pm.sql"
+       output="output/ucrex_pm.csv"
+       >
+     </sql>
+     <echo message="### exit status = ${exit.status}" />
+</target>
+<target name="check-ladr-pm">
+    <sql
+       classpath="C:\\_Pralav\\code_libraries\\java\\ojdbc6_g.jar" driver="oracle.jdbc.OracleDriver"
+       url="${ladr.pm.db.url}"
+       userid="${ladr.pm.db.user}"
+       password="${ladr.pm.db.password}"
+       print="yes"
+       src="./sql/ladr_pm.sql"
+       output="output/ladr_pm.csv"
+       >
+     </sql>
+     <echo message="### exit status = ${exit.status}" />
+</target>
+<target name="check-i2b2-pm">
+    <sql
+       classpath="C:\\_Pralav\\code_libraries\\java\\ojdbc6_g.jar" driver="oracle.jdbc.OracleDriver"
+       url="${i2b2.pm.db.url}"
+       userid="${i2b2.pm.db.user}"
+       password="${i2b2.pm.db.password}"
+       print="yes"
+       src="./sql/i2b2_pm.sql"
+       output="output/i2b2_pm.csv"
+       >
+     </sql>
+     <echo message="### exit status = ${exit.status}" />
+</target>
+<target name="run-oracle-sql">
+    <sql
+       classpath="C:\\_Pralav\\code_libraries\\java\\ojdbc6_g.jar" driver="oracle.jdbc.OracleDriver"
+       url="${db.url}"
+       userid="${db.user}"
+       password="${db.password}"
+       print="yes"
+       src="./sql/crc_cell.sql"
+       output="output/crc_cell.txt"
+       >
      </sql>
      <echo message="### exit status = ${exit.status}" />
 </target>
