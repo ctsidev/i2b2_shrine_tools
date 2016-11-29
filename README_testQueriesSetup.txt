@@ -13,16 +13,16 @@ SCRIPTS:
 
 test_run_queries.sh     This is the main script, crontab schedulable, that iterates through the ./queries/ subfolder and
                         invokes the curl_command.sh and xml_parse.sh scripts to execute the shrine/i2b2 queries stored under 
-						the 'queries' subfolder.  The results and query elapsed time of the queries are appended to the 
-						run_queries_output.txt file.  To schedule the queries (all queries under the 'queries' subfolder) to
-						run at specific time/day (e.g. run once in the morning, once in the evening), schedule this script 
-						via crontab.
+			the 'queries' subfolder.  The results and query elapsed time of the queries are appended to the 
+			run_queries_output.txt file.  To schedule the queries (all queries under the 'queries' subfolder) to
+			run at specific time/day (e.g. run once in the morning, once in the evening), schedule this script 
+			via crontab.
 						
-curl_command.sh 		This script contains the URL used by 'curl' to log on to the designated shrine network  (e.g. UCReX)    
+curl_command.sh 	This script contains the URL used by 'curl' to log on to the designated shrine network  (e.g. UCReX)    
                         via the local shrine webclient.  It needs to be modified to match the URL of the local site's shrine
-						webclient. The script does a curl "POST" of the test query XML file.
+			webclient. The script does a curl "POST" of the test query XML file.
 						
-xml_parse.sh			This script executes the 'xmlstarlet' command line tool to edit the XML output and parse the results,
+xml_parse.sh		This script executes the 'xmlstarlet' command line tool to edit the XML output and parse the results,
                         one line for each SHRINE node.
 						
 stucture_querier_output.py   This Python script takes the 'run_queries_output.txt' file and formats the contents into 
@@ -30,9 +30,9 @@ stucture_querier_output.py   This Python script takes the 'run_queries_output.tx
                         To execute this script:
                              python structure_querier_output.py run_queries_output.txt > testQueryOutFile.txt 
 							 
-						the output file 'testQueryOutFile.txt' will have this heading:
-                                	query|execution date-time|mins|secs|UCD|UCI|UCLA|UCSD|UCSF
-						It can be imported into Excel for viewing.
+			the output file 'testQueryOutFile.txt' will have this heading:
+                                query|execution date-time|mins|secs|UCD|UCI|UCLA|UCSD|UCSF
+			It can be imported into Excel for viewing.
 						
 
 TEST QUERY XML file creation:
