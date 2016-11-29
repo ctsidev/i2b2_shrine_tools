@@ -22,4 +22,16 @@ stucture_querier_output.py   This Python script takes the 'run_queries_output.
                         the output file 'testQueryOutFile.txt' will have this heading:  
                                      query|execution date-time|mins|secs|UCD|UCI|UCLA|UCSD|UCSF                              
                         It can be imported into Excel for viewing.
-                TEST QUERY XML file creation:1) Open a browser and log on to the local shrine webclient2) Build the query (e.g. 'asthma', age '0-9 years old') you want to run using the web client  3) Click Run Query -> OK 3) When the results appear in the Query Status box, click on 'Message Log', scroll down to find 'runQueryInstance_fromQueryDefinition', click on it to display its contents.  4) Copy all the lines next to the pink vertical bar.    5) Back on the server, 'cd' to the 'queries' folder, open the 'vi' editor (e.g. vi asthmaAge0-9.txt), then insert the text copied in step 46) In the <security> section, edit the 'username' (if change is needed) and '<password>'.  The <password>line should reflect this (where myPassword is the one associated with the 'username'):           <password>myPassword</password>  7) Save the file.8) On the shrine web client, click on 'Clear' and close the 'Message Log' window9) Repeat steps 2-8 for additional queries 
+                        
+                        
+TEST QUERY XML file creation:
+1) Open a browser and log on to the local shrine webclient
+2) Build the query (e.g. 'asthma', age '0-9 years old') you want to run using the web client  
+3) Click Run Query -> OK 
+4) When the results appear in the Query Status box, click on 'Message Log', scroll down to find 'runQueryInstance_fromQueryDefinition', click on it to display its contents.  
+5) Copy all the lines next to the pink vertical bar.    
+6) Back on the server, 'cd' to the 'queries' folder, open the 'vi' editor (e.g. vi asthmaAge0-9.txt), then insert the text copied in step 5
+7) In the <security> section, edit the 'username' (if change is needed) and '<password>'.  The <password>line should reflect this (where myPassword is the one associated with the 'username'):           <password>myPassword</password>  
+8) Save the file.
+9) On the shrine web client, click on 'Clear' and close the 'Message Log' window
+10) Repeat steps 2-9 for additional queries 
