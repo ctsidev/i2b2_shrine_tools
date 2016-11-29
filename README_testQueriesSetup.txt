@@ -34,4 +34,4 @@ TEST QUERY XML file creation:
 7) In the <security> section, edit the 'username' (if change is needed) and '<password>'.  The <password>line should reflect this (where myPassword is the one associated with the 'username'):           <password>myPassword</password>  
 8) Save the file.
 9) On the shrine web client, click on 'Clear' and close the 'Message Log' window
-10) Repeat steps 2-9 for additional queries 
+10) Repeat steps 2-9 for additional queries.
