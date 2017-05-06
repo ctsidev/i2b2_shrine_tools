@@ -1,0 +1,65 @@
+
+Wed May  3 12:30:06 PDT 2017 -- Starting a batch of test queries...
+
+./queries/18-34.txt
+Wed May  3 12:30:06 PDT 2017
+0 minutes and 0 seconds elapsed for query ./queries/18-34.txt.
+
+./queries/ashtma.txt
+Wed May  3 12:30:06 PDT 2017
+Number of patients for "Asthma@11:50:27":133
+0 minutes and 0 seconds elapsed for query ./queries/ashtma.txt.
+
+
+Wed May  3 12:30:06 PDT 2017 -- Batch ended.  0 minutes and 0 seconds elapsed for batch.
+
+*********************************************************************
+
+Wed May  3 12:32:40 PDT 2017 -- Starting a batch of test queries...
+
+./queries/18-34.txt
+Wed May  3 12:32:40 PDT 2017
+0 minutes and 0 seconds elapsed for query ./queries/18-34.txt.
+
+./queries/ashtma.txt
+Wed May  3 12:32:40 PDT 2017
+Number of patients for "Asthma@11:50:27":133
+0 minutes and 1 seconds elapsed for query ./queries/ashtma.txt.
+
+
+Wed May  3 12:32:41 PDT 2017 -- Batch ended.  0 minutes and 1 seconds elapsed for batch.
+
+*********************************************************************
+
+Wed May  3 12:34:50 PDT 2017 -- Starting a batch of test queries...
+
+./queries/18_34.txt
+Wed May  3 12:34:50 PDT 2017
+0 minutes and 0 seconds elapsed for query ./queries/18_34.txt.
+
+./queries/ashtma.txt
+Wed May  3 12:34:50 PDT 2017
+Number of patients for "Asthma@11:50:27":133
+0 minutes and 0 seconds elapsed for query ./queries/ashtma.txt.
+
+
+Wed May  3 12:34:50 PDT 2017 -- Batch ended.  0 minutes and 0 seconds elapsed for batch.
+
+*********************************************************************
+
+Wed May  3 12:37:47 PDT 2017 -- Starting a batch of test queries...
+
+./queries/18_34.txt
+Wed May  3 12:37:47 PDT 2017
+Number of patients for "  18-34 years o@12:29:09":47
+0 minutes and 1 seconds elapsed for query ./queries/18_34.txt.
+
+./queries/ashtma.txt
+Wed May  3 12:37:48 PDT 2017
+Number of patients for "Asthma@11:50:27":133
+0 minutes and 0 seconds elapsed for query ./queries/ashtma.txt.
+
+
+Wed May  3 12:37:48 PDT 2017 -- Batch ended.  0 minutes and 1 seconds elapsed for batch.
+
+*********************************************************************
